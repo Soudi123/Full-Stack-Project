@@ -1,0 +1,17 @@
+@use "../../assets/sass/variables" as *;
+.nav{
+    background-color: $color-secondary;
+    height: 25px;
+    color: $color-white;
+    text-align:left;
+    padding: 10px;
+    .title{
+        padding:15px 20px 10px;
+        margin: 15px 5px 10px;
+    
+       
+    }
+    }
+    
+    
+

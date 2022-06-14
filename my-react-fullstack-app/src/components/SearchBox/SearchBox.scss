@@ -1,0 +1,25 @@
+@use "../../assets/sass/variables" as *;
+.search-box{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 30%;
+    margin: 2%;
+    &__input{
+        width: 45%;
+        height :20%;
+        text-align: center;
+        margin :5px;
+        background-color: $color-grey;
+        border-style: none;
+        
+
+
+    }
+    &__label{
+        color: $color-secondary;
+        font-family: $font-poppins;
+        font-weight:600;
+        font-size: $font-size-SM +3px;
+        
+    }
+}
