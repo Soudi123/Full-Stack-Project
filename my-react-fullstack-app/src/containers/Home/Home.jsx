@@ -7,10 +7,10 @@ const Home = () => {
   return (
     
       <div className="home">
-        <section className="explore">
+     {/*    <section className="explore"> */}
      
           <ExploreCourses></ExploreCourses>
-        </section>
+     {/*    </section> */}
         {/* <h2>Find your next course</h2> */}
       </div>
    

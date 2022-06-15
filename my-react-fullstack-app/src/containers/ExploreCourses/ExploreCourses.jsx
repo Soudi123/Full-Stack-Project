@@ -9,9 +9,9 @@ const ExploreCourses =()=>{
     
     <div>
 <SearchBox></SearchBox></div>
-<section>
+<div>
 <CourseResults></CourseResults>
-</section>
+</div>
 
 
 
