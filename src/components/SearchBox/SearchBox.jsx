@@ -1,19 +1,30 @@
 import React from "react";
-
+import { useState } from "react";
 import "./SearchBox.scss";
 
-const SearchBox = () => {
- /*    const { label, searchTerm, handleInput } = props; */
-  
-    /* const capitalizedLabel = label[0].toUpperCase() + label.slice(1);
-   */
-    return (
-      <form className="search-box">
-        <label  className="search-box__label"> Find your next course!.... {/* {capitalizedLabel} */}</label>
-        <input type="text" /* name={label} value={searchTerm} onInput={handleInput} */ className="search-box__input"/>
-      </form>
-    );
+const SearchBox = (props) => {
+  const { onInput } = props;
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const handleInput = (e) => {
+    setSearchTerm(e.target.value);
+    onInput(e.target.value);
   };
-  
-  export default SearchBox;
-  
+
+  return (
+    <form className="search-box">
+      <label className="search-box__label">
+        {" "}
+        Find your next course!.... 
+      </label>
+      <input
+        type="text"
+        value={searchTerm}
+        onChange={handleInput}
+        className="search-box__input"
+      />
+    </form>
+  );
+};
+
+export default SearchBox;

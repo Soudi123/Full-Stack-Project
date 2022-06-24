@@ -1,0 +1,18 @@
+@use "../../assets/sass/variables" as *;
+.Container{
+
+    width:80%;
+    height: 90%;
+    margin-left: 3%;
+
+.btn{ width : 15%;
+    height: 45px;
+    color:$color-secondary;
+    font-weight: bold;
+    background-color: $color-light-grey-secondary;
+    border-style: none;position: relative;
+   
+margin:10px;
+padding: 10px;
+right: -450px;
+}}

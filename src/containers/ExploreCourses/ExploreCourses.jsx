@@ -1,20 +1,21 @@
-import "./ExploreCourses.scss"
-import SearchBox from "../../components/SearchBox/SearchBox"
-import CourseResults from "../../components/CourseResults/CourseResults";
+import "./ExploreCourses.scss";
+import { useState, useEffect } from "react";
+import SearchBox from "../../components/SearchBox/SearchBox";
 
+const ExploreCourses = () => {
+  const [searchTerm, setSearchTerm] = useState("");
 
-const ExploreCourses =()=>{
+  const handleInput = (value) => {
+    const cleanInput = value.toLowerCase();
+    setSearchTerm(cleanInput);
+  };
 
-    return (<>
-    
+  return (
     <div>
-<SearchBox></SearchBox></div>
-<div>
-<CourseResults></CourseResults>
-</div>
-
-
-
-    </>);
+      <div>
+        <SearchBox searchTerm={searchTerm} onInput={handleInput}></SearchBox>
+      </div>
+    </div>
+  );
 };
 export default ExploreCourses;
